@@ -1,0 +1,45 @@
+
+mode: Test
+pre_train: /mnt/local/HNET-ZJ-1220/ckpt/last-v1.ckpt
+device: gpu
+
+model:
+  base_resolution: 32
+  resolution: 64
+  level: 2
+  postsmooth: 3
+
+train:
+  dataset_dir: [
+      /mnt/xingyu-5t/dataset/dataset/dataset-1122/PSL-NETWORK/network,
+      /mnt/xingyu-5t/dataset/dataset/dataset-1122/trainA/network,
+      /mnt/xingyu-5t/dataset/dataset/dataset-1122/trainB/network,
+      /mnt/xingyu-5t/dataset/dataset/dataset-1122/trainC/network,
+      /mnt/xingyu-5t/dataset/dataset/dataset-1122/trainD/network
+    ]
+  # dataset_dir: /mnt/local/dataset/dataset-1013/network
+  # dataset_dir: /mnt/local/dataset/dataset-1001/network-U
+  
+  batch_size: 3
+  num_works: 32
+  learning_rate: 1e-3
+  max_epoch: 300
+  
+  output_path: /mnt/local/HNET-ZJ-1220/eval
+  logger:
+    path: tf_logs
+    version: v0
+  checkpoint:
+    path: checkpoint
+
+
+evaluation: 
+  dataset_dir: [/mnt/local/dataset-0901/test/network]
+  # dataset_dir: [
+  #   /mnt/xingyu-5t/dataset/dataset/dataset-1122/trainA/network,
+  #     # /mnt/xingyu-5t/dataset/dataset/dataset-1122/test/train-A/network,
+  #     # /mnt/xingyu-5t/dataset/dataset/dataset-1122/test/train-B/network,
+  #     # /mnt/xingyu-5t/dataset/dataset/dataset-1122/test/train-C/network,
+  #     # /mnt/xingyu-5t/dataset/dataset/dataset-1122/test/train-D/network
+  #   ]
+  batch_size: 2

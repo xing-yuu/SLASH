@@ -1,0 +1,49 @@
+voxel:
+  input_dir: [
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V0,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V1,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V2,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V3,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V4,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V5,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V6,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V7,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V8,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V9
+    # /mnt/local/voxel-dataset-Final/PSL-voxel/A,
+    # /mnt/local/voxel-dataset-Final/PSL-voxel/B,
+    # /mnt/local/voxel-dataset-Final/PSL-voxel/C,
+    # /mnt/local/voxel-dataset-Final/TPMS-voxel/A,
+    # /mnt/local/voxel-dataset-Final/TPMS-voxel/B,
+    # /mnt/local/voxel-dataset-Final/TPMS-voxel/C,
+    # # /mnt/local/voxel-dataset-Final/Truss-voxel/A,
+    # # /mnt/local/voxel-dataset-Final/Truss-voxel/B,
+    # # /mnt/local/voxel-dataset-Final/Truss-voxel/C,
+  ]
+  resolution: 64
+  max_volume_fraction: 0.5
+  min_volume_fraction: 0.15
+out_dir: [
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V0_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V1_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V2_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V3_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V4_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V5_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V6_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V7_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V8_MINES,
+    /mnt/local/voxel-dataset-Final/all-res-TPMS/V9_MINES
+  # # /mnt/local/voxel-dataset-Final/PSL-voxel/A_network,
+  # # /mnt/local/voxel-dataset-Final/PSL-voxel/B_network,
+  # # /mnt/local/voxel-dataset-Final/PSL-voxel/C_network,
+  # /mnt/local/voxel-dataset-Final/TPMS-voxel/A_network_MINES_sample_material,
+  # /mnt/local/voxel-dataset-Final/TPMS-voxel/B_network_MINES_sample_material,
+  # /mnt/local/voxel-dataset-Final/TPMS-voxel/C_network_MINES_sample_material,
+  # /mnt/local/voxel-dataset-Final/Truss-voxel/A_network,
+  # /mnt/local/voxel-dataset-Final/Truss-voxel/B_network,
+  # /mnt/local/voxel-dataset-Final/Truss-voxel/C_network,
+  ]
+material:
+  youngs_modulus: 1
+  poisson_ratio: 0.35

@@ -1,0 +1,34 @@
+mode: Train
+pre_train: null
+device: gpu
+
+model:
+  base_resolution: 64
+  resolution: 64
+  level: 1
+  smooth: 3
+
+train:
+  dataset_dir: [
+      /public/home/lvlin013/project/voxel-dataset-Final/new_test_0331
+    ]
+
+  batch_size: 16
+  num_works: 16
+  learning_rate: 3e-4
+  max_epoch: 150
+  
+  output_path: /public/home/lvlin013/project/ISINS/test
+  logger:
+    path: tf_logs
+    version: v0
+  checkpoint:
+    path: checkpoint
+  
+evaluation: 
+  dataset_dir: [
+    /public/home/lvlin013/project/voxel-dataset-Final/Truss-voxel/A_network_MINES,
+    ]
+
+  batch_size:  16
+

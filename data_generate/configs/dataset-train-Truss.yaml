@@ -1,0 +1,13 @@
+voxel:
+  input_dir: [
+    /mnt/local/project/dataset/single-0313
+  ]
+  resolution: 64
+  max_volume_fraction: 0.5
+  min_volume_fraction: 0.15
+out_dir: [
+    /mnt/local/project/dataset/single-0313、512
+  ]
+material:
+  youngs_modulus: 1
+  poisson_ratio: 0.35

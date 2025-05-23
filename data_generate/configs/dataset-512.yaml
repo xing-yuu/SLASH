@@ -1,0 +1,9 @@
+voxel:
+  input_dir: [/mnt/local/project/dataset/512]
+  resolution: 512
+  max_volume_fraction: 0.5
+  min_volume_fraction: 0.25
+out_dir: [/mnt/local/project/dataset/512-ISINS-INPUT]
+material:
+  youngs_modulus: 1
+  poisson_ratio: 0.35

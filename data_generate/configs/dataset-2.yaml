@@ -1,0 +1,9 @@
+voxel:
+  input_dir: /mnt/local/dataset_label_free/TPMS-VOXEL
+  resolution: 64
+  max_volume_fraction: 0.5
+  min_volume_fraction: 0.25
+out_dir: /mnt/local/dataset_label_free/network_TPMS
+material:
+  youngs_modulus: 1
+  poisson_ratio: 0.35
