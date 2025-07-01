@@ -3,7 +3,6 @@ pre_train: null
 device: gpu
 
 model:
-  base_resolution: 64
   resolution: 64
   level: 1
   smooth: 3
