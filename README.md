@@ -1,6 +1,7 @@
-# PCG-Informed Neural Solvers for High-Resolution Homogenization of Periodic Microstructures 
+# SLASH: A Spectral-Aligned Numerical Neural Hybrid Solver for Microstructure Homogenization
+
 This repository contains the official implementation of the paper:
-**"PCG-Informed Neural Solvers for High-Resolution Homogenization of Periodic Microstructures"** 
+**"SLASH: A Spectral-Aligned Numerical Neural Hybrid Solver for Microstructure Homogenization"**
 We provide the training code, configuration files, and scripts to reproduce our results on periodic microstructure datasets.
 The dataset is not publicly released; please contact us if you have a legitimate need for access.
 
@@ -22,7 +23,7 @@ We use `.yaml` configuration files to define training parameters. Below is a bre
 | `mode` | code execution mode. `train` indicates training mode, `test` indicates testing mode (requires a pre-trained model). |  
 | `pre_train` | Path to the pre-trained model. |  
 | `model.resolution` | Resolution of the microstructure. |  
-| `model.level` | Number of multi-level stages in the CGINS. |  
+| `model.level` | Number of multi-level stages in the SLASH. |  
 | `model.smooth` | number of iterations for the PCG numerical solver. |  
 
 
